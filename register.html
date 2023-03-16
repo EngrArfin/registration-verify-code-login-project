@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/signup.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <div class="form">
+        <h2>SignUp Form</h2>
+        <p>It's free for all and always</p> <br>
+    <form action="">
+        <div class="error-text">Error</div>
+        <div class="grid-details">
+            <div class="input">
+                <label> First Name</label>
+                <input type="text" name="fname" placeholder="First Name" required pattern="[a-zA-Z'_'\s]*">
+            </div>
+            <div class="input">
+                <label> Last Name</label>
+                <input type="text" name="lname" placeholder="Last Name" required pattern="[a-zA-Z'_'\s]*">
+            </div>
+        </div>
+        <div class="input">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter Your Email">
+        </div>
+        <div class="input">
+            <label>Phone Number</label>
+            <input type="phone" name="phone" placeholder="Phone Number" required pattern="[0-9]{11}" oninvalid="this.setCustomValidity('Enter 11 Digit Number')" oninput="this.setCustomValidity('')">
+        </div>
+        <div class="grid-details">
+            <div class="input">
+                <label>Password</label>
+                <input type="password" name="" placeholder="Password" required>
+            </div>
+            <div class="input">
+                <label> Confirm Password</label>
+                <input type="password" name="" placeholder="Confirm Password" required>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Signup Now" class="button">
+        </div>
+    </form>
+    <div class="link">Already have an account? <a href="">Login now</a> </div>
+    </div>
+    
+    <script src="js/signup.js"></script>
+</body>
+</html>

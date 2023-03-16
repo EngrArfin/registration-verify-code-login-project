@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
+} 
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: wheat;
+}
+#header a.log h1{
+    text-transform: uppercase;
+    color: rgb(179, 1, 1);
+
+}
+button.logout_btn{
+    padding: 9px 25px;
+    border-color: rgb(41, 150, 177);
+    border-radius: 8px;
+    border: 1px solid rgb(112, 133, 133);
+    cursor: pointer;
+    color: rgb(2, 2, 2);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+
+}
+button.logout_btn:hover{
+    color: rgb(255, 27, 27);
+    background-color: wheat;
+}
+section{
+    margin: 40px;
+}
+span{
+    color:rgb(3, 192, 192);
+    cursor: pointer;
+    text-decoration: underline;
+}

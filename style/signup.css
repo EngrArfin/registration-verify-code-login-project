@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
+} 
+body{
+    position: relative;
+    background: #06a7c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+::selection{
+    color: white;
+    background: #07cae4;
+} 
+.form{
+    position: relative;
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: -3px 3px 10px -5px rgba(rgb(7, 6, 6), green, blue, alpha);
+    padding: 30px 30px;
+}
+.form h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.form p{
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+.form form{
+    margin: 8px;
+}
+/* //logo part */
+form input[type="file"]{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    cursor: pointer;
+    padding: 20px;
+
+}
+form i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #292f30;
+    z-index: 100;
+    pointer-events: none;
+    cursor: pointer;
+}
+.file-upload:hover{
+    background-position: 0 100%;
+    
+}
+.file-upload:hover{
+    color: aqua;
+
+}
+
+/* new part */
+
+
+.form form .error-text{
+    color: rgb(224, 0, 0);
+    padding: 4px 6px;
+    text-align: center;
+    border-radius: 4px;
+    background: #f3eadc;
+    border: 1px solid rgb(233, 0, 0);
+    margin-bottom: 8px;  
+    
+}
+.form .grid-details{
+    display: flex;
+}
+.form .grid-details .input:first-child{
+    margin-left: 8px;
+    width: 100%;
+}
+.form .grid-details .input:last-child{
+    margin-left: 8px;
+    width: 100%;
+}
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    padding: 0 8px;
+    border: 1px solid rgb(224, 217, 217);
+    border-radius: 5px;
+    outline: none;
+}
+.form form .input input:focus,
+.form form .input input:valid{
+    border: 2px solid rgb(50, 238, 245);
+    transform: 0.1s ease;
+    outline: none;
+}
+
+.form form input.button{
+    height: 45px;
+    width: 100%;
+    margin-top: 15px;
+    color: #ffffff;
+    background: #07cae4;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid rgb(5, 15, 19);
+}
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+
+}
+.form .link a{
+    color: #029494;
+    text-decoration: none;
+    transition: 0.5 calc();
+}
+.form .link a:hover{
+    text-decoration: underline;
+    
+}
+
+
+
